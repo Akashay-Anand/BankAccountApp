@@ -3,8 +3,8 @@ package BankAccountApp;
 // [Note-1]- 'extends'
 public class CurrentAccount extends Account{
     // List properties specific to a Checking account
-    long debitCardNumber;
-    int debitCardPIN;
+    private long debitCardNumber;
+    private  int debitCardPIN;
 
     // Constructor to initialize current account properties
     public CurrentAccount(String name, String cif, double initialDeposit){

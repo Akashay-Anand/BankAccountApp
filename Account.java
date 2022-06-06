@@ -10,14 +10,14 @@ package BankAccountApp;
  // making it abstract so that other can not create object of it; but they can access it through child class.
 public abstract class Account implements BaseRate {
     // List common properties for saving and current accounts
-    String name;
-    String cif;
-    String accountNumber;
-    double baserate;
-    double balance;
-    static int index = 10000;
+    private String name;
+    private String cif;
+    protected String accountNumber;
+    private double baserate;
+    private double balance;
+    private static int index = 10000;
 
-    double rate;
+    protected double rate;
 
     // Constructor to set base properties and initialize the account
     public Account(String name , String cif, Double initialDeposit){
