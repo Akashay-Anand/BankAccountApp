@@ -1,4 +1,4 @@
-package BankAccountApp;
+package BankAccountProject;
 
 // [Note-1]: 'interface' ;
 // [Note-2]: Why using interface insted of class ;

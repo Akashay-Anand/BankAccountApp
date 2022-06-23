@@ -1,4 +1,4 @@
-package BankAccountApp;
+package BankAccountProject;
 
 // --------- Project by Akashay Anand --------------
 /**
@@ -13,7 +13,7 @@ public abstract class Account implements BaseRate {
     private String name;
     private String cif;
     protected String accountNumber;
-    private double baserate;
+    // private double baserate;
     private double balance;
     private static int index = 10000;
 

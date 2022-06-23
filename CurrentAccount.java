@@ -1,4 +1,4 @@
-package BankAccountApp;
+package BankAccountProject;
 
 // [Note-1]- 'extends'
 public class CurrentAccount extends Account{
