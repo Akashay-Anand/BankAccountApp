@@ -6,6 +6,7 @@ import java.util.List;
 
 public class BankAccountApp {
 
+    static int flag = 0;
     static String name;
     static String cif;
     static String accountType;
@@ -13,11 +14,18 @@ public class BankAccountApp {
 
     public static void main(String[] args) {
 
-        String file = "D:\\Java Projects\\BankAccountProject\\UsersAccountInfo.csv";
-
+        
+        ClassResource res = new ClassResource();
+        Account accountOBJ;
         // CurrentAccount currentAc1 = new CurrentAccount("Anand","23456789012",4000);
         // SavingAccount savingAc1 = new SavingAccount("Anand","12345678901",5000);
-        // // currentAc1.showInfo();
+
+        res.startDekay(3000);
+
+        
+        
+        
+        // currentAc1.showInfo();
         // System.out.println("************");
         // savingAc1.showInfo();
         // savingAc1.compound();
@@ -28,15 +36,16 @@ public class BankAccountApp {
         // Read a CSV file then create new accounts based on that data
 
         // String file = "BankAccountApp\\BankAccountData.csv";
-        List<String[]> newAccountHolder = CSVfile.read(file);
-        System.out.println("-----Accounts-------");
-        for(String[] accountHolder : newAccountHolder){
-            name = accountHolder[0];
-            cif = accountHolder[1];
-            accountType = accountHolder[2];
-            initialDeposit = Double.parseDouble(accountHolder[3]);
+        // String file = "D:\\Java Projects\\BankAccountProject\\UsersAccountInfo.csv";
+        // List<String[]> newAccountHolder = CSVfile.read(file);
+        // System.out.println("-----Accounts-------");
+        // for(String[] accountHolder : newAccountHolder){
+        //     name = accountHolder[0];
+        //     cif = accountHolder[1];
+        //     accountType = accountHolder[2];
+        //     initialDeposit = Double.parseDouble(accountHolder[3]);
 
-            System.out.println("name: " + name + "cif no.: " + cif + "Account Type: "+accountType + "Initial Deposite: "+ initialDeposit);
-        }
+        //     System.out.println("name: " + name + "cif no.: " + cif + "Account Type: "+accountType + "Initial Deposite: "+ initialDeposit);
+        // }
     }
 }
